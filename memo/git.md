@@ -20,8 +20,10 @@ last update : 2024.09.01 (일)
     - git push origin --delete <branch_name> : 원격 브랜치 삭제
   - git checkout <branch_name> : 지정한 브랜치로 변환
   - git merge <branch_name> : 현재 브랜치에 다른 브랜치(name)의 변경사항을 병합
+    - 예시 : dev의 내용을 main에 반영하고 싶다 == dev 브랜치에서 "git rebase main"
   - git rebase <branch_name> : 현재 브랜치의 머리를 다른 브랜치(name)의 다음 커밋으로 연결 (내역 간소화)
   - [merge, rebase, squash 정리](https://cjw-awdsd.tistory.com/49)
+  - [rebase 예시 자세히](https://velog.io/@minju1009/%EB%82%B4%EA%B0%80-%EB%B3%B4%EA%B8%B0-%EC%9C%84%ED%95%B4-%EB%8B%A4%EC%8B%9C-%EC%9E%91%EC%84%B1%ED%95%98%EB%8A%94-Git-workflow-rebase)
 - 원격 저장소 관리
   - git remote -v : 원격 저장소 url 확인
   - git fetch : 원격 저장소의 변경사항 확인 및 비교
