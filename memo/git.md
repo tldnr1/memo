@@ -14,10 +14,13 @@ last update : 2024.09.01 (일)
   - git commit -m "\<message>\" : stage 변경사항 커밋
 - 브랜치 관리
   - git branch : 현재 브랜치 목록 확인
-  - git branch <branch_name> : 새 브랜치 생성
+  - git branch <branch_name> : 새 로컬 브랜치 생성
+    - 작업 후 git push를 통해 원격에 브랜치 반영 가능
+  - git branch -d <branch_name> : 로컬 브랜치 삭제
+    - git push origin --delete <branch_name> : 원격 브랜치 삭제
   - git checkout <branch_name> : 지정한 브랜치로 변환
-  - git merge <branch_name> : 현재 브랜치에 다른 브랜치의 변경사항을 병합
-  - git rebase <branch_name> : 현재 브랜치의 머리를 다른 브랜치의 다음 커밋으로 연결 (내역 간소화)
+  - git merge <branch_name> : 현재 브랜치에 다른 브랜치(name)의 변경사항을 병합
+  - git rebase <branch_name> : 현재 브랜치의 머리를 다른 브랜치(name)의 다음 커밋으로 연결 (내역 간소화)
   - [merge, rebase, squash 정리](https://cjw-awdsd.tistory.com/49)
 - 원격 저장소 관리
   - git remote -v : 원격 저장소 url 확인
