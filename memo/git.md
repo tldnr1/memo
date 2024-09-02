@@ -109,6 +109,9 @@ last update : 2024.09.01 (일)
   2. Actions 에 코드 추가 (secrets.변수명 으로. 참조)
   3. Branch protection rule 설정
      - Action test를 통과해야 merge가 되도록 설정
+  - 배포 시간 단축
+    - [Action Cache 활용](https://fitpet.medium.com/github-actions%EC%9D%98-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%BA%90%EC%8B%B1%EC%9D%84-%ED%86%B5%ED%95%9C-%EC%84%9C%EB%B2%84-%EB%B0%B0%ED%8F%AC%EC%86%8D%EB%8F%84-%ED%96%A5%EC%83%81-28cd17ee2e20)
+    - [Docker Cache 활용](https://babgeuleus.tistory.com/entry/%EB%B0%B0%ED%8F%AC-%ED%95%98%EB%8A%94%EB%8D%B0-%EA%B1%B8%EB%A6%AC%EB%8D%98-%EC%8B%9C%EA%B0%84-13%EB%B6%84%EC%9D%84-5%EB%B6%84%EC%9C%BC%EB%A1%9C-%EC%A4%84%EC%9D%B4%EA%B8%B0)
 <br><br>
 
 ## 파트 분배를 위한 branch 관리
@@ -130,5 +133,15 @@ last update : 2024.09.01 (일)
 <br><br>
 
 ## GitHub Branch 관리 전략(규약)
-Git Flow 등 / 
-[깃 액션 의존성 캐싱을 통한 배포 속도 향상](https://fitpet.medium.com/github-actions%EC%9D%98-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%BA%90%EC%8B%B1%EC%9D%84-%ED%86%B5%ED%95%9C-%EC%84%9C%EB%B2%84-%EB%B0%B0%ED%8F%AC%EC%86%8D%EB%8F%84-%ED%96%A5%EC%83%81-28cd17ee2e20)
+ - Git Flow
+   - ![alt text](git_flow.png)
+   - main(master)에서 tag로 버전 관리
+   - 장점 : 버전 관리 용이(롤백 용이). 명확성. 배포 안정성
+   - 단점 : 복잡함(실수 가능성 높음). 느린 릴리스. 유연하지 않은 구조
+   - 사용 구조 : 버전 관리가 들어가는 "어플리케이션"에 유리한 구조
+ - GitHub Flow
+   - ![alt text](github_flow.png)
+   - 배포를 위한 main, 개발을 위한 dev(feature)로 나뉨
+   - 장점 : 간단한 구조. 유연한 구조. 빠른 배포 및 릴리스
+   - 단점 : 배포 위험성 및 관리 어려움. 대규모 프로젝트에 적합하지 않음
+   - 사용 구조 : 최종 버전만 사용하는 "웹" 기반에 유리한 구조
