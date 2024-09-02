@@ -134,13 +134,13 @@ last update : 2024.09.01 (일)
 
 ## GitHub Branch 관리 전략(규약)
  - Git Flow
-   - ![alt text](git_flow.png)
+   - ![alt text](image/git_flow.png)
    - main(master)에서 tag로 버전 관리
    - 장점 : 버전 관리 용이(롤백 용이). 명확성. 배포 안정성
    - 단점 : 복잡함(실수 가능성 높음). 느린 릴리스. 유연하지 않은 구조
    - 사용 구조 : 버전 관리가 들어가는 "어플리케이션"에 유리한 구조
  - GitHub Flow
-   - ![alt text](github_flow.png)
+   - ![alt text](image/github_flow.png)
    - 배포를 위한 main, 개발을 위한 dev(feature)로 나뉨
    - 장점 : 간단한 구조. 유연한 구조. 빠른 배포 및 릴리스
    - 단점 : 배포 위험성 및 관리 어려움. 대규모 프로젝트에 적합하지 않음
