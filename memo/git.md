@@ -25,6 +25,7 @@ last update : 2024.09.01 (일)
   - git pull : 원격 저장소의 변경사항 로컬에 반영
     - git pull origin <branch_name> : 특정 branch의 변경사항을 로컬에 반영
   - git push : 로컷 커밋을 원격 저장소에 업로드
+    - git push --set-upstream origin <branch_name> : branch에서 매번 리모트 브랜치를 지정할 필요가 없도록 고정해 줌 (이후는 git push 동일하게 사용)
 - 이력 관리
   - git log : 커밋 이력 확인
   - git log --graph --decorate --all : 커밋과 태그의 히스토리를 그래프 형태로 출력
