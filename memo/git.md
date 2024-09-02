@@ -17,6 +17,8 @@ last update : 2024.09.01 (일)
   - git branch <branch_name> : 새 브랜치 생성
   - git checkout <branch_name> : 지정한 브랜치로 변환
   - git merge <branch_name> : 현재 브랜치에 다른 브랜치의 변경사항을 병합
+  - git rebase <branch_name> : 현재 브랜치의 머리를 다른 브랜치의 다음 커밋으로 연결 (내역 간소화)
+  - [merge, rebase, squash 정리](https://cjw-awdsd.tistory.com/49)
 - 원격 저장소 관리
   - git remote -v : 원격 저장소 url 확인
   - git fetch : 원격 저장소의 변경사항 확인 및 비교
@@ -25,6 +27,7 @@ last update : 2024.09.01 (일)
   - git push : 로컷 커밋을 원격 저장소에 업로드
 - 이력 관리
   - git log : 커밋 이력 확인
+  - git log --graph --decorate --all : 커밋과 태그의 히스토리를 그래프 형태로 출력
   - git diff : 변경된 내용 비교
   - git revert <commit_HASH> : 특정 로컬 환경의 커밋을 되돌림
   - git reset --\<type> <commit_HASH> : 원격 저장소를 type에 맞게 지정한 head(해시 위치)로 이동
